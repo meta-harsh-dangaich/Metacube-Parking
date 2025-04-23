@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metaparking</title>
+    <link rel="stylesheet" href="practiceStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://www.metacube.com/assets/images/logo.svg" alt="metacube logo">
+        <ul class="nav-links">
+            <li><a href="#add-employee">Add Employee</a></li>
+            <li><a href="#add-vehicle">Add Vehicle</a></li>
+            <li><a href="#feedback">Give Feedback</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+    </nav>
+    <img  class="landing-image" src="https://cdn.pixabay.com/photo/2019/08/01/07/26/architecture-4376923_1280.jpg" alt="cover image">
+    <!-- <img  class="landing-image" src="https://cdn.pixabay.com/photo/2020/10/02/06/54/cars-5620379_1280.jpg"> -->
+    <details id="add-employee" class="collapsible-section" open>
+        <summary class="collapsible-header">Add Employee</summary>
+
+            <div class="employee-container">
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrOI8eBmzgI1syUGZgZjga-lABToOMIldYg&s" alt="Employee Image" class="employee-image">
+                </div>
+                <div class="form-container">
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required />
+    
+                        <label for="gender">Gender</label>
+                        <div class="gender-options">
+                            <div class="gender-choice">
+                                <input type="radio" name="gender" id="male" value="Male" required />
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="gender-choice">
+                                <input type="radio" name="gender" id="female" value="Female" required />
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+    
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required />
+    
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+    
+                        <label for="contact">Contact Number</label>
+                        <input type="number" id="contact" placeholder="Enter your contact number" pattern="[6-9]{1}[0-9]{9}" required />
+    
+                        <input type="submit" value="Add Employee" class="submit-button" />
+                    </form>
+                </div>
+            </div>
+    </details>
+    
+    <details id="add-vehicle" class="collapsible-section" open>
+        <summary class="collapsible-header">Add Vehicle</summary>
+
+            <div class="employee-container">
+                <div class="image-container">
+                    <img src="https://png.pngtree.com/png-vector/20200116/ourmid/pngtree-car-apps-illustration-png-image_2129332.jpg" alt="Employee Image" class="employee-image">
+                </div>
+                <div class="form-container">
+                    <form>
+                        <label>Vehicle Make (Company)</label>
+                        <input type="text" placeholder="Enter vehicle make" required />
+    
+                        <label>Vehicle Model</label>
+                        <input type="text" placeholder="Enter vehicle model" required />
+    
+                        <label>Vehicle Type</label>
+                        <select required>
+                            <option value="">Select Vehicle Type</option>
+                            <option>Two wheeler</option>
+                            <option>Four wheeler</option>
+                            <option>Heavy vehicle</option>
+                        </select>
+    
+                        <label>Vehicle Number</label>
+                        <input type="text" placeholder="Enter vehicle number" required />
+    
+                        <label>Employee ID</label>
+                        <input type="text" placeholder="Enter Employee ID" required />
+    
+                        <label>Identification (Color, mark, accessory)</label>
+                        <textarea placeholder="Add identification details..."></textarea>
+    
+                        <input type="submit" value="Add Vehicle" class="submit-button" />
+                    </form>
+                </div>
+            </div>
+    </details>
+
+    <section id="feedback" class="feedback-section">
+        <div class="employee-container">
+            <div class="image-container">
+                <img src="https://fluentsupport.com/wp-content/uploads/2022/09/Feedback-form-examples-and-templates-that-work-01-min.jpg" 
+                     alt="Feedback Image" 
+                     class="employee-image">
+            </div>
+            <div class="form-container">
+                <form>
+                    <h2 style="text-align:center; margin-bottom:20px;">Feedback</h2>
+                    <label for="feedback-name">Name</label>
+                    <input type="text" id="feedback-name" placeholder="Enter your name" required>
+    
+                    <label for="feedback-email">Email</label>
+                    <input type="email" id="feedback-email" placeholder="Enter your email" required>
+    
+                    <label for="feedback-subject">Subject</label>
+                    <input type="text" id="feedback-subject" placeholder="Enter subject" required>
+    
+                    <label for="feedback-message">Message</label>
+                    <textarea id="feedback-message" placeholder="Write your message" rows="4" required></textarea>
+    
+                    <input type="submit" value="Submit Feedback" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <h2 style="text-align:center; margin-bottom:20px;">Pricing Plans</h2>
+        <div class="pricing-container">
+            
+            <div class="pricing-card">
+                <div class="price-circle">₹100</div>
+                <h3>Cycle</h3>
+                <p><strong>Daily:</strong> ₹5</p>
+                <p><strong>Monthly:</strong> ₹100</p>
+                <p><strong>Yearly:</strong> ₹500</p>
+                <button class="purchase-btn">Purchase Now</button>
+            </div>
+    
+            <div class="pricing-card">
+                <div class="price-circle">₹200</div>
+                <h3>Motorcycle</h3>
+                <p><strong>Daily:</strong> ₹10</p>
+                <p><strong>Monthly:</strong> ₹200</p>
+                <p><strong>Yearly:</strong> ₹1000</p>
+                <button class="purchase-btn">Purchase Now</button>
+            </div>
+    
+            <div class="pricing-card">
+                <div class="price-circle">₹500</div>
+                <h3>Four Wheelers</h3>
+                <p><strong>Daily:</strong> ₹20</p>
+                <p><strong>Monthly:</strong> ₹500</p>
+                <p><strong>Yearly:</strong> ₹3500</p>
+                <button class="purchase-btn">Purchase Now</button>
+            </div>
+    
+        </div>
+    </section>
+
+    
+    
+</body>
+</html>
